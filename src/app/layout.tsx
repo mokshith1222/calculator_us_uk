@@ -8,7 +8,7 @@ import { CookieConsent } from '@/components/layout/CookieConsent';
 import { LayoutWrapper } from '@/components/layout/LayoutWrapper';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://financetoolshub.com'),
+  metadataBase: new URL('https://financetoolshub-green.vercel.app'),
   title: {
     default: 'FinanceToolsHub | Professional Financial Calculators',
     template: '%s | FinanceToolsHub'
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FinanceToolsHub | Professional Financial Calculators',
     description: 'Free, professional-grade financial calculators and guides for mortgages, investing, retirement, and debt payoff.',
-    url: 'https://financetoolshub.com',
+    url: 'https://financetoolshub-green.vercel.app',
     siteName: 'FinanceToolsHub',
     images: [
       {
