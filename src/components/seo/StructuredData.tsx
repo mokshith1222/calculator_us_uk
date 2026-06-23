@@ -51,8 +51,8 @@ export function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "FinanceToolsHub",
-    "url": "https://financetoolshub.com",
-    "logo": "https://financetoolshub.com/logo.png",
+    "url": "https://financetoolshub-green.vercel.app",
+    "logo": "https://financetoolshub-green.vercel.app/logo.png",
     "sameAs": [
       "https://twitter.com/financetoolshub",
       "https://facebook.com/financetoolshub"
@@ -75,7 +75,7 @@ export function BreadcrumbSchema({ items }: { items: { name: string; item: strin
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://financetoolshub.com${item.item}`
+      "item": `https://financetoolshub-green.vercel.app${item.item}`
     }))
   };
 

@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
     title: `${stateData.name} Mortgage Calculator | Current Rates & Taxes`,
     description: `Calculate your monthly mortgage payments in ${stateData.name}. Factor in ${stateData.name}'s current interest rates, average property taxes, and home insurance costs.`,
     alternates: {
-      canonical: `https://financetoolshub.com/calculators/mortgage-calculator/${stateData.slug}`
+      canonical: `https://financetoolshub-green.vercel.app/calculators/mortgage-calculator/${stateData.slug}`
     }
   };
 }
