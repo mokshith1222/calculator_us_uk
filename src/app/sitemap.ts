@@ -6,7 +6,7 @@ import { megaCalculatorConfigs } from '@/data/megaCalculatorConfigs';
 import { US_STATES } from '@/data/states';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.financetoolshub.com';
+  const baseUrl = 'https://financetoolshub-green.vercel.app';
 
   const calculators = Object.keys(calculatorConfigs).map((slug) => ({
     url: `${baseUrl}/calculators/${slug}`,
