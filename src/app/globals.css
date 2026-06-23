@@ -1,0 +1,377 @@
+:root {
+  --background: #F7E6CA;
+  --secondary-background: #F9F4EA;
+  --primary-accent: #AD9C8E;
+  --secondary-accent: #E8D59E;
+  --text-primary: #222222;
+  --text-muted: #666666;
+  --card-bg: #FFFFFF;
+  
+  --button-bg: #AD9C8E;
+  --button-hover: #8F7F73;
+  --button-text: #FFFFFF;
+
+  --status-success: #4CAF50;
+  --status-warning: #FF9800;
+  --status-error: #F44336;
+  --status-info: #2196F3;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.05);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.05);
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+[data-theme='dark'] {
+  --background: #111111;
+  --secondary-background: #1A1A1A;
+  --primary-accent: #C4B09E;
+  --secondary-accent: #333333;
+  --text-primary: #EAEAEA;
+  --text-muted: #9A9A9A;
+  --card-bg: #1E1E1E;
+  
+  --button-bg: #AD9C8E;
+  --button-hover: #CDBBAE;
+  --button-text: #111111;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.5);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.5);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.5);
+}
+
+/* ============================================
+   DARK MODE — NUCLEAR TEXT FIX
+   !important in a stylesheet overrides inline styles.
+   This ensures ALL hardcoded color: '#111' elements
+   become readable on dark backgrounds.
+   ============================================ */
+
+/* Force all headings to use the light text color */
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6 {
+  color: var(--text-primary) !important;
+}
+
+/* Force paragraph text to be readable */
+[data-theme='dark'] p {
+  color: var(--text-primary) !important;
+}
+
+/* Force span/div text that has hardcoded dark color */
+[data-theme='dark'] span {
+  color: inherit;
+}
+
+/* Force label text */
+[data-theme='dark'] label {
+  color: var(--text-primary) !important;
+}
+
+/* Force link text */
+[data-theme='dark'] a {
+  color: inherit;
+}
+
+/* ============================================
+   DARK MODE — BACKGROUND OVERRIDES
+   Force white/light section backgrounds to dark
+   ============================================ */
+
+/* Force ALL section backgrounds to dark (they use inline white bg) */
+[data-theme='dark'] section {
+  background: var(--background) !important;
+}
+
+/* Exceptions: sections that intentionally use dark/gradient bg */
+[data-theme='dark'] section.keep-bg,
+[data-theme='dark'] section[style*="linear-gradient(135deg, #0D"],
+[data-theme='dark'] section[style*="linear-gradient(135deg, #1A"] {
+  background: unset !important;
+}
+
+/* White cards / panels become dark */
+[data-theme='dark'] div[style*="background: '#FFFFFF'"],
+[data-theme='dark'] div[style*="background: white"] {
+  background: var(--card-bg) !important;
+}
+
+/* Force all div text to be readable (most conservative approach) */
+[data-theme='dark'] [style*="color:#111"],
+[data-theme='dark'] [style*="color: #111"] {
+  color: var(--text-primary) !important;
+}
+
+/* The hubs section (white bg) */
+[data-theme='dark'] .hubs-section {
+  background: var(--secondary-background) !important;
+  border-top-color: #2A2A2A !important;
+}
+[data-theme='dark'] .hubs-section h2,
+[data-theme='dark'] .hubs-section h4,
+[data-theme='dark'] .hubs-section p {
+  color: var(--text-primary) !important;
+}
+
+/* Trust/stat numbers */
+[data-theme='dark'] .trust-bar {
+  background: var(--secondary-background) !important;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: var(--text-primary);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Base utility classes for typography */
+.text-muted {
+  color: var(--text-muted);
+}
+.text-center {
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navbar Responsiveness */
+.desktop-nav, .desktop-search {
+  display: none;
+}
+
+.mobile-menu-btn {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+    gap: 2rem;
+  }
+  .desktop-search {
+    display: block;
+    position: relative;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+/* Card Hover Effects */
+.category-card:hover, .recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg) !important;
+}
+
+/* Accessibility Focus States */
+*:focus-visible {
+  outline: 3px solid var(--primary-accent);
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .desktop-sidebar {
+    display: block !important;
+  }
+  .desktop-grid {
+    grid-template-columns: 1fr 300px !important;
+  }
+}
+
+/* =============================================
+   DARK MODE OVERRIDES — Comprehensive Fix
+   ============================================= */
+
+/* Cards & Panels */
+[data-theme='dark'] .featured-card {
+  background: var(--card-bg) !important;
+  border-color: #2A2A2A !important;
+}
+[data-theme='dark'] .featured-card h3,
+[data-theme='dark'] .featured-card h4,
+[data-theme='dark'] .featured-card p {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .category-card {
+  background: var(--card-bg) !important;
+  border-color: #2A2A2A !important;
+}
+[data-theme='dark'] .category-card h4 {
+  color: var(--text-primary) !important;
+}
+
+/* Hero section */
+[data-theme='dark'] .hero-gradient {
+  background: radial-gradient(circle at top right, rgba(173, 156, 142, 0.06) 0%, var(--background) 50%) !important;
+}
+
+/* Navbar */
+[data-theme='dark'] header {
+  background: var(--card-bg) !important;
+  border-bottom-color: #2A2A2A !important;
+}
+
+/* Input fields everywhere */
+[data-theme='dark'] input,
+[data-theme='dark'] textarea,
+[data-theme='dark'] select {
+  background: #1e1e1e !important;
+  color: var(--text-primary) !important;
+  border-color: #333333 !important;
+}
+[data-theme='dark'] input::placeholder,
+[data-theme='dark'] textarea::placeholder {
+  color: #555 !important;
+}
+
+/* All white/light section backgrounds  */
+[data-theme='dark'] .section-white {
+  background: var(--secondary-background) !important;
+}
+
+/* Recharts */
+[data-theme='dark'] .recharts-cartesian-grid-horizontal line,
+[data-theme='dark'] .recharts-cartesian-grid-vertical line {
+  stroke: #333 !important;
+}
+[data-theme='dark'] .recharts-text,
+[data-theme='dark'] .recharts-legend-item-text {
+  fill: var(--text-primary) !important;
+  color: var(--text-primary) !important;
+}
+[data-theme='dark'] .recharts-default-tooltip {
+  background: #1a1a1a !important;
+  border-color: #333 !important;
+  color: var(--text-primary) !important;
+}
+
+/* ---- Per-section dark overrides via data-section attr ---- */
+
+/* "Explore the Hubs" white section */
+[data-theme='dark'] .hubs-section {
+  background: var(--secondary-background) !important;
+  border-top-color: #2A2A2A !important;
+}
+
+/* Methodology section */
+[data-theme='dark'] .methodology-section {
+  background: var(--secondary-background) !important;
+}
+
+/* Stats / Trust bar */
+[data-theme='dark'] .trust-bar {
+  background: var(--background) !important;
+  border-top-color: #2A2A2A !important;
+  border-bottom-color: #2A2A2A !important;
+}
+
+/* Calculator Summary card */
+[data-theme='dark'] .summary-card {
+  background: #222222 !important;
+  border-color: var(--primary-accent) !important;
+}
+
+/* Trending sidebar */
+[data-theme='dark'] .trending-sidebar {
+  background: var(--card-bg) !important;
+  border-color: #2A2A2A !important;
+}
+[data-theme='dark'] .trending-sidebar a,
+[data-theme='dark'] .trending-sidebar span {
+  color: var(--text-primary) !important;
+}
+
+/* Mobile overlay menu */
+[data-theme='dark'] .mobile-menu-overlay {
+  background: var(--card-bg) !important;
+}
+
+/* FAQ Accordion rows */
+[data-theme='dark'] .faq-row {
+  border-bottom-color: #333 !important;
+}
+[data-theme='dark'] .faq-row:hover {
+  background: #1e1e1e !important;
+}
+
+/* Page backgrounds on legal/glossary pages */
+[data-theme='dark'] .page-container {
+  background: var(--background) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Dashboard */
+[data-theme='dark'] .dashboard-card {
+  background: var(--card-bg) !important;
+  border-color: #2A2A2A !important;
+}
+
+/* Global: any element with hardcoded white bg via class */
+[data-theme='dark'] .bg-white {
+  background: var(--card-bg) !important;
+}
+[data-theme='dark'] .text-dark {
+  color: var(--text-primary) !important;
+}
+
+/* Button variants */
+[data-theme='dark'] button[style*="background: #F1F5F9"],
+[data-theme='dark'] button[style*="background: '#F1F5F9'"] {
+  background: #2a2a2a !important;
+  color: var(--text-primary) !important;
+}
+
+/* Glass panel on hero */
+[data-theme='dark'] .glass-panel {
+  background: rgba(30, 30, 30, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}

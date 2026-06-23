@@ -1,0 +1,16 @@
+{
+  "name": "FinanceToolsHub",
+  "short_name": "FTH",
+  "description": "Professional-grade financial calculators for real estate, investing, debt, and retirement.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#C4B09E",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}
