@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!config) return { title: 'Calculator Not Found' };
   
   return {
-    title: `${config.name} | Free Online Tool | FinanceToolsHub`,
-    description: `Use our free ${config.name.toLowerCase()} to analyze your finances, view amortization and growth schedules, and plan your wealth.`,
+    title: `${config.name} | FinanceToolsHub`,
+    description: `Free ${config.name.toLowerCase()} to analyze your finances and plan your wealth.`,
   };
 }
 

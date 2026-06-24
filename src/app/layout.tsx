@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'FinanceToolsHub',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'FinanceToolsHub Premium Calculators',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'FinanceToolsHub | Professional Financial Calculators',
     description: 'Free, professional-grade financial calculators and guides for mortgages, investing, retirement, and debt payoff.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
