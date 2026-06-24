@@ -52,7 +52,9 @@ export default function ComparePage() {
             </select>
           </div>
           
-          <UniversalCalculator slug={slug1} />
+          <React.Suspense fallback={<div>Loading scenario A...</div>}>
+            <UniversalCalculator slug={slug1} />
+          </React.Suspense>
         </div>
 
         {/* SCENARIO B */}
@@ -75,7 +77,9 @@ export default function ComparePage() {
             </select>
           </div>
           
-          <UniversalCalculator slug={slug2} />
+          <React.Suspense fallback={<div>Loading scenario B...</div>}>
+            <UniversalCalculator slug={slug2} />
+          </React.Suspense>
         </div>
       </div>
     </div>

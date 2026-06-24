@@ -45,14 +45,18 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
         <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--primary-accent)', textAlign: 'center' }}>
           {stateObj.name} Property & Mortgage Hub
         </h2>
-        <UniversalCalculator slug="mortgage-calculator" />
+        <React.Suspense fallback={<div>Loading mortgage calculator...</div>}>
+          <UniversalCalculator slug="mortgage-calculator" />
+        </React.Suspense>
       </div>
 
       <div style={{ marginBottom: '4rem' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--primary-accent)', textAlign: 'center' }}>
           {stateObj.name} Debt Payoff Planner
         </h2>
-        <UniversalCalculator slug="debt-payoff-calculator" />
+        <React.Suspense fallback={<div>Loading debt payoff calculator...</div>}>
+          <UniversalCalculator slug="debt-payoff-calculator" />
+        </React.Suspense>
       </div>
     </div>
   );

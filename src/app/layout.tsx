@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FinanceToolsHub | Professional Financial Calculators',
     description: 'Free, professional-grade financial calculators and guides for mortgages, investing, retirement, and debt payoff.',
-    url: 'https://financetoolshub-green.vercel.app',
     siteName: 'FinanceToolsHub',
     images: [
       {
