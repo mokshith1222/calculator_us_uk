@@ -56,7 +56,7 @@ export function MegaFooter() {
                 const sectionId = category.replace(/[\\s&]+/g, '-').toLowerCase();
                 return (
                   <li key={category}>
-                    <Link href={`/calculators#${sectionId}`} className="footer-link" style={{ color: '#8A94A6', fontSize: '1rem', textDecoration: 'none', transition: 'color 0.2s' }}>
+                    <Link href={`/calculators/category/${sectionId}`} className="footer-link" style={{ color: '#8A94A6', fontSize: '1rem', textDecoration: 'none', transition: 'color 0.2s' }}>
                       {category}
                     </Link>
                   </li>

@@ -47,16 +47,19 @@ export default function CalculatorsHubPage() {
           const sectionId = category.replace(/[\\s&]+/g, '-').toLowerCase();
           return (
           <section key={category} id={sectionId}>
-            <h2 style={{ 
-              fontSize: '2rem', 
-              color: 'var(--text-primary)', 
-              marginBottom: '2rem',
-              borderBottom: '3px solid var(--secondary-accent)',
-              paddingBottom: '0.5rem',
-              display: 'inline-block'
-            }}>
-              {category} ({tools.length})
-            </h2>
+            <Link href={`/calculators/category/${sectionId}`} style={{ textDecoration: 'none' }}>
+              <h2 style={{ 
+                fontSize: '2rem', 
+                color: 'var(--text-primary)', 
+                marginBottom: '2rem',
+                borderBottom: '3px solid var(--secondary-accent)',
+                paddingBottom: '0.5rem',
+                display: 'inline-block',
+                cursor: 'pointer'
+              }}>
+                {category} ({tools.length})
+              </h2>
+            </Link>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
               {tools.map((tool) => (

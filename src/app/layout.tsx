@@ -14,9 +14,6 @@ export const metadata: Metadata = {
     template: '%s | FinanceToolsHub'
   },
   description: 'Free, professional-grade financial calculators and guides for mortgages, investing, retirement, and debt payoff.',
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     title: 'FinanceToolsHub | Professional Financial Calculators',
     description: 'Free, professional-grade financial calculators and guides for mortgages, investing, retirement, and debt payoff.',
