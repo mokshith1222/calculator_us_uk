@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   return {
     title: `${config.name} | FinanceToolsHub`,
-    description: `Free ${config.name.toLowerCase()} to analyze your finances and plan your wealth.`,
+    description: `Use our free, professional-grade ${config.name.toLowerCase()} to accurately analyze your finances, run custom scenarios, and confidently plan your long-term wealth.`,
   };
 }
 

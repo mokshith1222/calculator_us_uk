@@ -53,11 +53,7 @@ export const keywordDatabase: Record<string, KeywordData> = {
       "down-payment-calculator"
     ],
     relatedArticles: [
-      "what-is-a-mortgage",
-      "how-mortgages-work",
-      "first-time-home-buyer-guide",
-      "understanding-amortization",
-      "fixed-vs-adjustable-rate-mortgages"
+      "what-is-a-mortgage"
     ],
     description: "Calculate your monthly mortgage payment including principal, interest, taxes, and insurance."
   },
@@ -99,11 +95,7 @@ export const keywordDatabase: Record<string, KeywordData> = {
       "inflation-calculator"
     ],
     relatedArticles: [
-      "how-compound-interest-works",
-      "investing-basics",
-      "the-rule-of-72-explained",
-      "power-of-long-term-investing",
-      "understanding-apy-vs-apr"
+      "how-compound-interest-works"
     ],
     description: "Calculate how your money can grow over time with the power of compound interest."
   },
@@ -145,11 +137,7 @@ export const keywordDatabase: Record<string, KeywordData> = {
       "retirement-withdrawal-calculator"
     ],
     relatedArticles: [
-      "retirement-planning-guide",
-      "fire-movement-explained",
-      "401k-vs-ira",
-      "the-4-percent-rule",
-      "social-security-strategies"
+      "fire-movement-explained"
     ],
     description: "Plan your retirement strategy and see if you are on track to meet your financial goals."
   },
@@ -191,11 +179,7 @@ export const keywordDatabase: Record<string, KeywordData> = {
       "debt-to-income-calculator"
     ],
     relatedArticles: [
-      "debt-snowball-method-explained",
-      "how-to-get-out-of-debt",
-      "debt-avalanche-vs-snowball",
-      "understanding-interest-rates",
-      "debt-consolidation-pros-and-cons"
+      "debt-snowball-vs-avalanche"
     ],
     description: "Create a plan to pay off your debt faster and see how much interest you can save."
   },
@@ -237,11 +221,7 @@ export const keywordDatabase: Record<string, KeywordData> = {
       "expense-tracker"
     ],
     relatedArticles: [
-      "net-worth-explained",
-      "how-to-increase-net-worth",
-      "assets-vs-liabilities",
-      "wealth-building-strategies",
-      "tracking-your-finances"
+      "how-to-increase-net-worth"
     ],
     description: "Calculate your total net worth by adding up your assets and subtracting your liabilities."
   },
