@@ -22,6 +22,18 @@ export default function CalculatorsHubPage() {
     categorizedTools[config.category].push({ ...config, slug });
   });
 
+  const categoryToSlug: Record<string, string> = {
+    'Mortgage & Home': 'mortgage',
+    'Debt & Loans': 'debt',
+    'Investing': 'investing',
+    'Retirement': 'retirement',
+    'Income & Taxes': 'taxes',
+    'Bonus Tools': 'bonus',
+    'Crypto & Web3': 'crypto',
+    'Business': 'business',
+    'Advanced Real Estate': 'advanced-real-estate'
+  };
+
   const breadcrumbs = [
     { name: "Home", item: "/" },
     { name: "Calculators", item: "/calculators" }
@@ -44,7 +56,7 @@ export default function CalculatorsHubPage() {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '5rem' }}>
         {Object.entries(categorizedTools).map(([category, tools]) => {
-          const sectionId = category.replace(/[\\s&]+/g, '-').toLowerCase();
+          const sectionId = categoryToSlug[category] || category.replace(/[\s&]+/g, '-').toLowerCase();
           return (
           <section key={category} id={sectionId}>
             <Link href={`/calculators/category/${sectionId}`} style={{ textDecoration: 'none' }}>

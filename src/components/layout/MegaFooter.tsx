@@ -14,6 +14,18 @@ export function MegaFooter() {
     categorizedTools[config.category].push({ ...config, slug });
   });
 
+  const categoryToSlug: Record<string, string> = {
+    'Mortgage & Home': 'mortgage',
+    'Debt & Loans': 'debt',
+    'Investing': 'investing',
+    'Retirement': 'retirement',
+    'Income & Taxes': 'taxes',
+    'Bonus Tools': 'bonus',
+    'Crypto & Web3': 'crypto',
+    'Business': 'business',
+    'Advanced Real Estate': 'advanced-real-estate'
+  };
+
   return (
     <footer style={{ 
       background: 'linear-gradient(135deg, #0D0F2B 0%, #1A103C 40%, #0F1F3D 100%)',
@@ -53,7 +65,7 @@ export function MegaFooter() {
             </h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {Object.keys(categorizedTools).map((category) => {
-                const sectionId = category.replace(/[\\s&]+/g, '-').toLowerCase();
+                const sectionId = categoryToSlug[category] || category.replace(/[\s&]+/g, '-').toLowerCase();
                 return (
                   <li key={category}>
                     <Link href={`/calculators/category/${sectionId}`} className="footer-link" style={{ color: '#8A94A6', fontSize: '1rem', textDecoration: 'none', transition: 'color 0.2s' }}>

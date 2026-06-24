@@ -53,6 +53,7 @@ export const viewport = {
 }
 
 import { CurrencyProvider } from '@/contexts/CurrencyContext';
+import { CanonicalTag } from '@/components/seo/CanonicalTag';
 
 export default function RootLayout({
   children,
@@ -63,6 +64,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <CurrencyProvider>
+          <CanonicalTag />
           <OrganizationSchema />
           <LayoutWrapper>
             {children}
