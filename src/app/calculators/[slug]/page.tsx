@@ -5,6 +5,7 @@ import { AIAnswerBlock } from '@/components/seo/AIAnswerBlock';
 import { AuthorInfo, KeyTakeaways, SummaryTable } from '@/components/seo/AICitationLayer';
 import { FAQSchema, CalculatorSchema, BreadcrumbSchema } from '@/components/seo/StructuredData';
 import { calculatorConfigs } from '@/data/calculatorConfigs';
+import { megaCalculatorConfigs } from '@/data/megaCalculatorConfigs';
 import { keywordDatabase } from '@/data/keywords';
 import { categoryContent } from '@/data/categoryContent';
 import Link from 'next/link';
@@ -35,7 +36,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export function generateStaticParams() {
-  return Object.keys(calculatorConfigs)
+  const allConfigs = { ...calculatorConfigs, ...megaCalculatorConfigs };
+  return Object.keys(allConfigs)
     .filter(slug => !customSlugs.includes(slug))
     .map((slug) => ({
       slug,
@@ -44,7 +46,7 @@ export function generateStaticParams() {
 
 export default async function UniversalCalculatorPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const config = calculatorConfigs[resolvedParams.slug];
+  const config = calculatorConfigs[resolvedParams.slug] || megaCalculatorConfigs[resolvedParams.slug];
   
   if (!config || customSlugs.includes(resolvedParams.slug)) {
     notFound();
@@ -78,7 +80,7 @@ export default async function UniversalCalculatorPage({ params }: { params: Prom
   ];
 
   // Calculate Smart Recommendations
-  const allConfigs = Object.entries(calculatorConfigs).map(([key, val]) => ({ slug: key, ...val }));
+  const allConfigs = Object.entries({ ...calculatorConfigs, ...megaCalculatorConfigs }).map(([key, val]) => ({ slug: key, ...val }));
   let recommendations = allConfigs.filter(c => c.category === config.category && c.slug !== resolvedParams.slug);
   if (recommendations.length > 3) {
     recommendations = recommendations.sort(() => 0.5 - Math.random()).slice(0, 3);

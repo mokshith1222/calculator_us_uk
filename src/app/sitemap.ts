@@ -78,5 +78,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.6,
   }));
 
-  return [...corePages, ...categories, ...calculators, ...localHubs, ...guides, ...glossary];
+  return [...corePages, ...categories, ...calculators, ...megaCalculators, ...localHubs, ...guides, ...glossary];
 }
