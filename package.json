@@ -19,6 +19,11 @@
     "recharts": "^3.8.1",
     "resend": "^6.14.0"
   },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not dead"
+  ],
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",

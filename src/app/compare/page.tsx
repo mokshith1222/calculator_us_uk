@@ -37,6 +37,7 @@ export default function ComparePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', paddingBottom: '1rem', borderBottom: '2px solid var(--secondary-background)' }}>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-primary)' }}>Scenario A</h2>
             <select 
+              aria-label="Scenario A Calculator"
               value={slug1}
               onChange={(e) => setSlug1(e.target.value)}
               style={{ padding: '0.5rem', borderRadius: '6px', border: '1px solid var(--secondary-accent)', background: 'var(--secondary-background)', color: 'var(--text-primary)', outline: 'none' }}
@@ -59,6 +60,7 @@ export default function ComparePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', paddingBottom: '1rem', borderBottom: '2px solid var(--secondary-background)' }}>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-primary)' }}>Scenario B</h2>
             <select 
+              aria-label="Scenario B Calculator"
               value={slug2}
               onChange={(e) => setSlug2(e.target.value)}
               style={{ padding: '0.5rem', borderRadius: '6px', border: '1px solid var(--secondary-accent)', background: 'var(--secondary-background)', color: 'var(--text-primary)', outline: 'none' }}

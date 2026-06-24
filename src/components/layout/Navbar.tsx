@@ -69,7 +69,7 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-          <Link href="/compare" style={{ fontWeight: 600, color: '#F59E0B' }}>Compare PRO</Link>
+          <Link href="/compare" style={{ fontWeight: 600, color: '#B45309' }}>Compare PRO</Link>
           <Link href="/calculators" style={{ fontWeight: 600, color: 'var(--primary-accent)' }}>All Calculators</Link>
           <Link href="/calculators/category/mortgage" style={{ fontWeight: 500 }}>Mortgages</Link>
           <Link href="/calculators/category/crypto" style={{ fontWeight: 500 }}>Crypto</Link>
@@ -77,6 +77,7 @@ export function Navbar() {
           <Link href="/dashboard" style={{ fontWeight: 600, background: 'var(--primary-accent)', color: '#fff', padding: '0.4rem 0.8rem', borderRadius: '6px' }}>Dashboard</Link>
           
           <select 
+            aria-label="Currency Selector"
             value={currency.code} 
             onChange={(e) => setCurrency(e.target.value)}
             style={{ padding: '0.4rem', borderRadius: '6px', border: '1px solid var(--secondary-accent)', background: 'var(--secondary-background)', color: 'var(--text-primary)', cursor: 'pointer', outline: 'none' }}
@@ -178,6 +179,7 @@ export function Navbar() {
           <div style={{ padding: '0.5rem 1rem', display: 'flex', gap: '1rem', alignItems: 'center' }}>
             <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Currency:</span>
             <select 
+              aria-label="Currency Selector"
               value={currency.code} 
               onChange={(e) => setCurrency(e.target.value)}
               style={{ padding: '0.4rem', borderRadius: '6px', border: '1px solid var(--secondary-accent)', background: 'var(--secondary-background)', color: 'var(--text-primary)', cursor: 'pointer', outline: 'none' }}

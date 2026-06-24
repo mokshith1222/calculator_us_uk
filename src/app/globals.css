@@ -1,7 +1,7 @@
 :root {
   --background: #F7E6CA;
   --secondary-background: #F9F4EA;
-  --primary-accent: #AD9C8E;
+  --primary-accent: #5A493B;
   --secondary-accent: #E8D59E;
   --text-primary: #222222;
   --text-muted: #666666;
@@ -11,7 +11,7 @@
   --button-hover: #8F7F73;
   --button-text: #FFFFFF;
 
-  --status-success: #4CAF50;
+  --status-success: #2E7D32;
   --status-warning: #FF9800;
   --status-error: #F44336;
   --status-info: #2196F3;
@@ -36,7 +36,7 @@
   --text-muted: #9A9A9A;
   --card-bg: #1E1E1E;
   
-  --button-bg: #AD9C8E;
+  --button-bg: #5A493B;
   --button-hover: #CDBBAE;
   --button-text: #111111;
 

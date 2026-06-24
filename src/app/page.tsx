@@ -179,7 +179,7 @@ export default function Homepage() {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div style={{ background: 'var(--secondary-background)', padding: '1rem', borderRadius: '8px', border: '1px solid rgba(173, 156, 142, 0.2)' }}>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.25rem' }}>Monthly Growth</div>
-                  <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#4CAF50' }}>+8.4%</div>
+                  <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#2E7D32' }}>+8.4%</div>
                 </div>
                 <div style={{ background: 'var(--secondary-background)', padding: '1rem', borderRadius: '8px', border: '1px solid rgba(173, 156, 142, 0.2)' }}>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.25rem' }}>Debt Reduction</div>
@@ -279,7 +279,7 @@ export default function Homepage() {
                   <Home size={24} color="var(--primary-accent)" />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Mortgage & Home</h4>
+                  <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Mortgage & Home</h3>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>10 tools available</div>
                 </div>
               </div>
@@ -291,7 +291,7 @@ export default function Homepage() {
                   <CreditCard size={24} color="var(--primary-accent)" />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Debt & Loans</h4>
+                  <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Debt & Loans</h3>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>10 tools available</div>
                 </div>
               </div>
@@ -303,7 +303,7 @@ export default function Homepage() {
                   <TrendingUp size={24} color="var(--primary-accent)" />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Investing</h4>
+                  <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Investing</h3>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>10 tools available</div>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export default function Homepage() {
                   <PieChart size={24} color="var(--primary-accent)" />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Retirement</h4>
+                  <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Retirement</h3>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>10 tools available</div>
                 </div>
               </div>
@@ -327,7 +327,7 @@ export default function Homepage() {
                   <Briefcase size={24} color="var(--primary-accent)" />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Income & Taxes</h4>
+                  <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Income & Taxes</h3>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>10 tools available</div>
                 </div>
               </div>
@@ -339,7 +339,7 @@ export default function Homepage() {
                   <PlusCircle size={24} color="var(--primary-accent)" />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Bonus Tools</h4>
+                  <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Bonus Tools</h3>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>10 tools available</div>
                 </div>
               </div>
@@ -353,8 +353,8 @@ export default function Homepage() {
                 </div>
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Crypto & Web3</h4>
-                    <span style={{ background: '#7C3AED', color: '#fff', fontSize: '0.65rem', fontWeight: 700, padding: '0.15rem 0.5rem', borderRadius: '2rem', letterSpacing: '0.05em' }}>NEW</span>
+                    <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Crypto & Web3</h3>
+                    <span style={{ background: '#6D28D9', color: '#fff', fontSize: '0.65rem', fontWeight: 700, padding: '0.15rem 0.5rem', borderRadius: '2rem', letterSpacing: '0.05em' }}>NEW</span>
                   </div>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>4 tools — Staking, DCA, IL & more</div>
                 </div>
@@ -369,8 +369,8 @@ export default function Homepage() {
                 </div>
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Advanced Real Estate</h4>
-                    <span style={{ background: '#059669', color: '#fff', fontSize: '0.65rem', fontWeight: 700, padding: '0.15rem 0.5rem', borderRadius: '2rem', letterSpacing: '0.05em' }}>NEW</span>
+                    <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Advanced Real Estate</h3>
+                    <span style={{ background: '#047857', color: '#fff', fontSize: '0.65rem', fontWeight: 700, padding: '0.15rem 0.5rem', borderRadius: '2rem', letterSpacing: '0.05em' }}>NEW</span>
                   </div>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>4 tools — Flipping, AirBnB, HELOC</div>
                 </div>
@@ -385,8 +385,8 @@ export default function Homepage() {
                 </div>
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <h4 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Business & Tax</h4>
-                    <span style={{ background: '#D97706', color: '#fff', fontSize: '0.65rem', fontWeight: 700, padding: '0.15rem 0.5rem', borderRadius: '2rem', letterSpacing: '0.05em' }}>NEW</span>
+                    <h3 style={{ fontSize: '1.2rem', color: '#111', fontWeight: 700, marginBottom: '0.25rem' }}>Business & Tax</h3>
+                    <span style={{ background: '#B45309', color: '#fff', fontSize: '0.65rem', fontWeight: 700, padding: '0.15rem 0.5rem', borderRadius: '2rem', letterSpacing: '0.05em' }}>NEW</span>
                   </div>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>4 tools — Margin, Freelancer, Tax</div>
                 </div>
@@ -450,14 +450,14 @@ export default function Homepage() {
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
                   <ShieldCheck color="var(--primary-accent)" style={{ marginTop: '0.2rem' }} />
                   <div>
-                    <h4 style={{ color: '#111', fontWeight: 600, marginBottom: '0.25rem' }}>Bank-Level Accuracy</h4>
+                    <h3 style={{ color: '#111', fontWeight: 600, marginBottom: '0.25rem' }}>Bank-Level Accuracy</h3>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Daily compounding, exact day-counts, and true amortization schedules.</p>
                   </div>
                 </li>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
                   <TrendingUp color="var(--primary-accent)" style={{ marginTop: '0.2rem' }} />
                   <div>
-                    <h4 style={{ color: '#111', fontWeight: 600, marginBottom: '0.25rem' }}>100% Data Privacy</h4>
+                    <h3 style={{ color: '#111', fontWeight: 600, marginBottom: '0.25rem' }}>100% Data Privacy</h3>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>All calculations happen locally in your browser. We never see your numbers.</p>
                   </div>
                 </li>
@@ -477,7 +477,7 @@ export default function Homepage() {
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid #F1F5F9', paddingBottom: '1rem' }}>
                   <span style={{ color: 'var(--text-muted)' }}>Annual Return (APY)</span>
-                  <span style={{ fontWeight: 600, color: '#4CAF50' }}>8.4%</span>
+                  <span style={{ fontWeight: 600, color: '#2E7D32' }}>8.4%</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', paddingTop: '1rem' }}>
                   <span style={{ color: '#111', fontWeight: 700, fontSize: '1.2rem' }}>Total in 30 Years</span>
